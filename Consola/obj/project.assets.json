@@ -5828,6 +5828,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Dominio >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
       "Persistencia >= 1.0.0"
     ]
@@ -5859,6 +5860,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj"
+            },
             "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj": {
               "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj"
             }

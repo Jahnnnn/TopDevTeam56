@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Consola/1.0.0": {
         "dependencies": {
+          "Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.10",
           "Persistencia": "1.0.0"
         },
