@@ -9,6 +9,7 @@ namespace Consola
     class Program
     {
         private static IRepositorioEmpresa repositorioEmpresa = new RepositorioEmpresa(new AplicacionContext());
+        private static IRepositorioCliente repositorioCliente = new RepositorioCliente(new AplicacionContext());
         
         static void Main(string[] args)
         {
@@ -19,13 +20,23 @@ namespace Consola
             //obtenerEmpresa();
             //obtenerEmpresas();
             //eliminarEmpresa();
+
+            //CRUD Entidad Cliente
+
+            //crearCliente();
+            //actualizarCliente();
+            //obtenerCliente();
+            //obtenerClientes();
+            //obtenerClientesPorEmpresa();
+            //eliminarCliente();
+
         }
 
         static void crearEmpresa() {
 
             Empresa empresa = new Empresa(){
-                Nombre = "Maderas J&G  S.A.S",
-                NIT = "3652365285"
+                Nombre = "Metalicas Alvarado S.A.",
+                NIT = "96856325236"
             };
 
             Empresa empresaCreada = repositorioEmpresa.Crear(empresa);
@@ -81,7 +92,7 @@ namespace Consola
 
         static void eliminarEmpresa() {
 
-            bool empresaEliminada = repositorioEmpresa.Eliminar(7);
+            bool empresaEliminada = repositorioEmpresa.Eliminar(1);
 
             if(empresaEliminada) {
 
@@ -91,6 +102,96 @@ namespace Consola
             else {
 
                 Console.WriteLine("No se pudo eliminar la empresa");
+
+            }
+        }
+
+        static void crearCliente() {
+
+            Cliente cliente = new Cliente(){
+                Nombre = "Daniela Alejandra Gómez Rodríguez",
+                Fecha_Nacimiento = new DateTime(1989,8,15),
+                Telefono = "3185296665",
+                IdEmpresa = 3
+            };
+
+            Cliente clienteCreado = repositorioCliente.Crear(cliente);
+
+            if(clienteCreado != null){
+                Console.WriteLine("Cliente creado correctamente");
+            }
+            else {
+                Console.WriteLine("No se pudo crear el cliente");
+            }
+        }
+
+        static void actualizarCliente() {
+
+            Cliente cliente = new Cliente(){
+                Id = 5,
+                Nombre = "Daniela Alejandra Gómez Rodríguez",
+                Fecha_Nacimiento = new DateTime(1989,8,15),
+                Telefono = "3185296665",
+                IdEmpresa = 3
+            };
+
+            Cliente clienteActualizado = repositorioCliente.Actualizar(cliente);
+
+            if(clienteActualizado != null){
+                Console.WriteLine("Cliente actualizado correctamente");
+            }
+            else {
+                Console.WriteLine("No se pudo actualizar el cliente");
+            }
+        }
+
+        static void obtenerCliente() {
+
+            Cliente clienteEncontrado = repositorioCliente.ObtenerPorId(3);
+
+            if(clienteEncontrado != null){
+                Console.WriteLine($"Cliente {clienteEncontrado.Nombre} encontrado");
+            }
+            else {
+                Console.WriteLine("No se pudo encontrar el cliente");
+            }
+
+        }
+
+        static void obtenerClientes() {
+
+            IEnumerable<Cliente> clientesEncontrados = repositorioCliente.Obtener();
+
+            foreach (var cliente in clientesEncontrados)
+            {
+                Console.WriteLine($"{cliente.Id} - {cliente.Nombre} - {cliente.Fecha_Nacimiento} - {cliente.Telefono} - {cliente.IdEmpresa}");
+            }
+
+        }
+
+        static void obtenerClientesPorEmpresa() {
+
+            IEnumerable<Cliente> clientesEncontrados = repositorioCliente.ObtenerPorIdEmpresa(3);
+
+            foreach (var cliente in clientesEncontrados)
+            {
+                Console.WriteLine($"{cliente.Id} - {cliente.Nombre} - {cliente.Fecha_Nacimiento} - {cliente.Telefono} - {cliente.IdEmpresa}");
+            }
+
+        }
+
+        static void eliminarCliente() {
+
+            bool clienteEliminado = repositorioCliente.Eliminar(7);
+
+            if(clienteEliminado) {
+
+                Console.WriteLine("Cliente eliminado correctamente");
+
+            }
+            else {
+
+                Console.WriteLine("No se pudo eliminar el cliente");
 
             }
         }
