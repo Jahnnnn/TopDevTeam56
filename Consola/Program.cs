@@ -10,6 +10,7 @@ namespace Consola
     {
         private static IRepositorioEmpresa repositorioEmpresa = new RepositorioEmpresa(new AplicacionContext());
         private static IRepositorioCliente repositorioCliente = new RepositorioCliente(new AplicacionContext());
+        private static IRepositorioDirectivo repositorioDirectivo = new RepositorioDirectivo(new AplicacionContext());
         
         static void Main(string[] args)
         {
@@ -29,6 +30,15 @@ namespace Consola
             //obtenerClientes();
             //obtenerClientesPorEmpresa();
             //eliminarCliente();
+
+            //CRUD Entidad Directivo
+
+            //crearDirectivo();
+            //actualizarDirectivo();
+            //obtenerDirectivo();
+            //obtenerDirectivos();
+            //obtenerDirectivosPorEmpresa();
+            //eliminarDirectivo();
 
         }
 
@@ -194,6 +204,99 @@ namespace Consola
                 Console.WriteLine("No se pudo eliminar el cliente");
 
             }
+        }
+
+        static void crearDirectivo() {
+
+            Directivo directivo = new Directivo(){
+                Nombre = "Ana Sofia Alvarez Gónzales",
+                Fecha_Nacimiento = new DateTime(1995,8,10),
+                Sueldo_Bruto = 2200000,
+                Categoria = 1,
+                IdEmpresa = 1
+            };
+
+            Directivo directivoCreado = repositorioDirectivo.Crear(directivo);
+
+            if(directivoCreado != null){
+                Console.WriteLine("Directivo creado correctamente");
+            }
+            else {
+                Console.WriteLine("No se pudo crear el directivo");
+            }
+
+        }
+
+        static void actualizarDirectivo() {
+
+            Directivo directivo = new Directivo(){
+                Id = 1,
+                Nombre = "Manuel Alejandro Llanes Gómez",
+                Fecha_Nacimiento = new DateTime(1993,10,15),
+                Sueldo_Bruto = 2000000,
+                Categoria = 2,
+                IdEmpresa = 6
+            };
+
+            Directivo directivoActualizado = repositorioDirectivo.Actualizar(directivo);
+
+            if(directivoActualizado != null){
+                Console.WriteLine("Directivo actualizado correctamente");
+            }
+            else {
+                Console.WriteLine("No se pudo actualizar el directivo");
+            }
+
+        }
+
+        static void obtenerDirectivo() {
+
+            Directivo directivoEncontrado = repositorioDirectivo.ObtenerPorId(2);
+
+            if(directivoEncontrado != null){
+                Console.WriteLine($"Directivo {directivoEncontrado.Nombre} encontrado");
+            }
+            else {
+                Console.WriteLine("No se pudo encontrar el directivo");
+            }
+        }
+
+        static void obtenerDirectivos() {
+
+            IEnumerable<Directivo> directivosEncontrados = repositorioDirectivo.Obtener();
+
+            foreach (var directivo in directivosEncontrados)
+            {
+                Console.WriteLine($"{directivo.Id} - {directivo.Nombre} - {directivo.Fecha_Nacimiento} - {directivo.Sueldo_Bruto} - {directivo.Categoria} - {directivo.IdEmpresa}");
+            }
+        }
+
+        static void obtenerDirectivosPorEmpresa() {
+
+            IEnumerable<Directivo> directivosEncontrados = repositorioDirectivo.ObtenerPorIdEmpresa(1);
+
+            foreach (var directivo in directivosEncontrados)
+            {
+                Console.WriteLine($"{directivo.Id} - {directivo.Nombre} - {directivo.Fecha_Nacimiento} - {directivo.Sueldo_Bruto} - {directivo.Categoria} - {directivo.IdEmpresa}");
+            }
+
+        }
+
+        static void eliminarDirectivo() {
+
+            bool directivoEliminado = repositorioDirectivo.Eliminar(2);
+
+            if(directivoEliminado) {
+
+                Console.WriteLine("Directivo eliminado correctamente");
+
+            }
+            else {
+
+                Console.WriteLine("No se pudo eliminar el directivo");
+
+            }
+
         }
     }
 }
