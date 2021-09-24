@@ -11,6 +11,7 @@ namespace Consola
         private static IRepositorioEmpresa repositorioEmpresa = new RepositorioEmpresa(new AplicacionContext());
         private static IRepositorioCliente repositorioCliente = new RepositorioCliente(new AplicacionContext());
         private static IRepositorioDirectivo repositorioDirectivo = new RepositorioDirectivo(new AplicacionContext());
+        private static IRepositorioEmpleado repositorioEmpleado = new RepositorioEmpleado(new AplicacionContext());
         
         static void Main(string[] args)
         {
@@ -39,6 +40,15 @@ namespace Consola
             //obtenerDirectivos();
             //obtenerDirectivosPorEmpresa();
             //eliminarDirectivo();
+
+            //CRUD Entidad Empleado
+            //crearEmpleado();
+            //actualizarEmpleado();
+            //obtenerEmpleado();
+            //obtenerEmpleados();
+            //obtenerEmpleadosPorEmpresa();
+            //obtenerEmpleadosPorDirectivo();
+            //eliminarEmpleado();
 
         }
 
@@ -102,7 +112,7 @@ namespace Consola
 
         static void eliminarEmpresa() {
 
-            bool empresaEliminada = repositorioEmpresa.Eliminar(1);
+            bool empresaEliminada = repositorioEmpresa.Eliminar(3);
 
             if(empresaEliminada) {
 
@@ -284,7 +294,7 @@ namespace Consola
 
         static void eliminarDirectivo() {
 
-            bool directivoEliminado = repositorioDirectivo.Eliminar(2);
+            bool directivoEliminado = repositorioDirectivo.Eliminar(4);
 
             if(directivoEliminado) {
 
@@ -297,6 +307,105 @@ namespace Consola
 
             }
 
+        }
+
+        static void crearEmpleado() {
+
+            Empleado empleado = new Empleado(){
+                Nombre = "Daniela Gómez Alvarez",
+                Fecha_Nacimiento = new DateTime(1991,10,18),
+                Sueldo_Bruto = 1800000,
+                IdDirectivo = 4,
+                IdEmpresa = 1
+            };
+
+            Empleado empleadoCreado = repositorioEmpleado.Crear(empleado);
+
+            if(empleadoCreado != null){
+                Console.WriteLine("Empleado creado correctamente");
+            }
+            else {
+                Console.WriteLine("No se pudo crear el empleado");
+            }
+        }
+
+        static void actualizarEmpleado() {
+
+            Empleado empleado = new Empleado(){
+                Id = 1,
+                Nombre = "David Alejandro Alvarez Gómez",
+                Fecha_Nacimiento = new DateTime(1996,8,5),
+                Sueldo_Bruto = 1900000,
+                IdDirectivo = 1,
+                IdEmpresa = 3
+            };
+
+            Empleado empleadoActualizado = repositorioEmpleado.Actualizar(empleado);
+
+            if(empleadoActualizado != null){
+                Console.WriteLine("Empleado actualizado correctamente");
+            }
+            else {
+                Console.WriteLine("No se pudo actualizar el empleado");
+            }
+        }
+
+        static void obtenerEmpleado() {
+
+            Empleado empleadoEncontrado = repositorioEmpleado.ObtenerPorId(2);
+
+            if(empleadoEncontrado != null){
+                Console.WriteLine($"Empleado {empleadoEncontrado.Nombre} encontrado");
+            }
+            else {
+                Console.WriteLine("No se pudo encontrar el empleado");
+            }
+        }
+
+        static void obtenerEmpleados() {
+
+            IEnumerable<Empleado> empleadosEncontrados = repositorioEmpleado.Obtener();
+
+            foreach (var empleado in empleadosEncontrados)
+            {
+                Console.WriteLine($"{empleado.Id} - {empleado.Nombre} - {empleado.Fecha_Nacimiento} - {empleado.Sueldo_Bruto} - {empleado.IdDirectivo} - {empleado.IdEmpresa}");
+            }
+        }
+
+        static void obtenerEmpleadosPorEmpresa() {
+
+            IEnumerable<Empleado> empleadosEncontrados = repositorioEmpleado.ObtenerPorIdEmpresa(1);
+
+            foreach (var empleado in empleadosEncontrados)
+            {
+                Console.WriteLine($"{empleado.Id} - {empleado.Nombre} - {empleado.Fecha_Nacimiento} - {empleado.Sueldo_Bruto} - {empleado.IdDirectivo} - {empleado.IdEmpresa}");
+            }
+        }
+
+        static void obtenerEmpleadosPorDirectivo() {
+
+            IEnumerable<Empleado> empleadosEncontrados = repositorioEmpleado.ObtenerPorIdDirectivo(4);
+
+            foreach (var empleado in empleadosEncontrados)
+            {
+                Console.WriteLine($"{empleado.Id} - {empleado.Nombre} - {empleado.Fecha_Nacimiento} - {empleado.Sueldo_Bruto} - {empleado.IdDirectivo} - {empleado.IdEmpresa}");
+            }
+        }
+
+        static void eliminarEmpleado() {
+
+            bool empleadoEliminado = repositorioEmpleado.Eliminar(3);
+
+            if(empleadoEliminado) {
+
+                Console.WriteLine("Empleado eliminado correctamente");
+
+            }
+            else {
+
+                Console.WriteLine("No se pudo eliminar el empleado");
+
+            }
         }
     }
 }
