@@ -48,15 +48,15 @@ namespace Consola
             //obtenerEmpleados();
             //obtenerEmpleadosPorEmpresa();
             //obtenerEmpleadosPorDirectivo();
-            //eliminarEmpleado();
+            eliminarEmpleado();
 
         }
 
         static void crearEmpresa() {
 
             Empresa empresa = new Empresa(){
-                Nombre = "Metalicas Alvarado S.A.",
-                NIT = "96856325236"
+                Nombre = "Carpintería Robledo S.A.",
+                NIT = "985632563252"
             };
 
             Empresa empresaCreada = repositorioEmpresa.Crear(empresa);
@@ -167,7 +167,7 @@ namespace Consola
 
         static void obtenerCliente() {
 
-            Cliente clienteEncontrado = repositorioCliente.ObtenerPorId(3);
+            Cliente clienteEncontrado = repositorioCliente.ObtenerPorId(5);
 
             if(clienteEncontrado != null){
                 Console.WriteLine($"Cliente {clienteEncontrado.Nombre} encontrado");
@@ -242,10 +242,10 @@ namespace Consola
             Directivo directivo = new Directivo(){
                 Id = 1,
                 Nombre = "Manuel Alejandro Llanes Gómez",
-                Fecha_Nacimiento = new DateTime(1993,10,15),
-                Sueldo_Bruto = 2000000,
-                Categoria = 2,
-                IdEmpresa = 6
+                Fecha_Nacimiento = new DateTime(1995,11,8),
+                Sueldo_Bruto = 2800000,
+                Categoria = 1,
+                IdEmpresa = 1
             };
 
             Directivo directivoActualizado = repositorioDirectivo.Actualizar(directivo);
@@ -394,7 +394,7 @@ namespace Consola
 
         static void eliminarEmpleado() {
 
-            bool empleadoEliminado = repositorioEmpleado.Eliminar(3);
+            bool empleadoEliminado = repositorioEmpleado.Eliminar(5);
 
             if(empleadoEliminado) {
 
