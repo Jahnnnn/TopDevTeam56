@@ -1,0 +1,86 @@
+﻿@page
+@model FrontEnd.Pages.ListadoEmpleadosModel
+@{
+}
+
+<h2 class="text-center">Empleados</h2>
+<br>
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3">
+            <div class="col-md-8">
+                <label for="NombreEmpleado" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="NombreEmpleado" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-4">
+                <label for="FechaNacimientoEmpleado" class="form-label">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" id="FechaNacimientoEmpleado">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="SueldoBrutoEmpleado" class="form-label">Sueldo Bruto</label>
+                <input type="text" class="form-control" id="SueldoBrutoEmpleado">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="EmpresaEmpleado" class="form-label">Empresa</label>
+                <select class="form-control" aria-label="Default select example" id="EmpresaEmpleado">
+                    <option selected value="1">Empresa 1</option>
+                    <option value="2">Empresa 2</option>
+                    <option value="3">Empresa 3</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="DirectivoEmpleado" class="form-label">Directivo</label>
+                <select class="form-control" aria-label="Default select example" id="DirectivoEmpleado">
+                    <option selected value="1">Directivo 1</option>
+                    <option value="2">Directivo 2</option>
+                    <option value="3">Directivo 3</option>
+                </select>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Crear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<h4>Listado de Empleados</h4>
+<br>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Sueldo Bruto</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var empleado in Model.listadoEmpleados)
+        {
+            <tr>
+                <th scope="row">@empleado.Id</th>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Fecha_Nacimiento.ToShortDateString()</td>
+                <td>@empleado.Sueldo_Bruto.ToString("C")</td>
+                <td>
+                    <a href="#" class="btn btn-success">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-info">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

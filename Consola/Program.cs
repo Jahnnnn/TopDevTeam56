@@ -48,7 +48,7 @@ namespace Consola
             //obtenerEmpleados();
             //obtenerEmpleadosPorEmpresa();
             //obtenerEmpleadosPorDirectivo();
-            eliminarEmpleado();
+            //eliminarEmpleado();
 
         }
 
@@ -245,7 +245,7 @@ namespace Consola
                 Fecha_Nacimiento = new DateTime(1995,11,8),
                 Sueldo_Bruto = 2800000,
                 Categoria = 1,
-                IdEmpresa = 1
+                IdEmpresa = 3
             };
 
             Directivo directivoActualizado = repositorioDirectivo.Actualizar(directivo);
