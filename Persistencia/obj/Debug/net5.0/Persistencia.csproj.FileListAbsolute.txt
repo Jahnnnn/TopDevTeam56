@@ -34,3 +34,21 @@ E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.dll
 E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
 E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.pdb
 E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.genruntimeconfig.cache
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.deps.json
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.runtimeconfig.json
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.runtimeconfig.dev.json
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.dll
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\ref\Persistencia.dll
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.pdb
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Dominio.dll
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\bin\Debug\net5.0\Dominio.pdb
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.csproj.AssemblyReference.cache
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfoInputs.cache
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfo.cs
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CopyComplete
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.dll
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.pdb
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.genruntimeconfig.cache
