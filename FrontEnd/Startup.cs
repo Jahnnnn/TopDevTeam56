@@ -28,6 +28,8 @@ namespace FrontEnd
             services.AddRazorPages();
             services.AddSingleton<AplicacionContext>();
             services.AddSingleton<IRepositorioEmpleado, RepositorioEmpleado>();
+            services.AddSingleton<IRepositorioEmpresa, RepositorioEmpresa>();
+            services.AddSingleton<IRepositorioDirectivo, RepositorioDirectivo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

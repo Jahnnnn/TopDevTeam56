@@ -235,3 +235,6 @@ C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\F
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\ListadoClientes.cshtml.g.cs
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\ListadoDirectivos.cshtml.g.cs
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\ListadoEmpresas.cshtml.g.cs
+C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\ListadoClientes.cshtml.g.cs
+C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\ListadoDirectivos.cshtml.g.cs
+C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\ListadoEmpresas.cshtml.g.cs

@@ -5,39 +5,76 @@
 
 <h2 class="text-center">Empleados</h2>
 <br>
+@if (Model.empleadoCreado == 0)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡No se pudo crear el Empleado, intentelo de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if(Model.empleadoCreado == 1) 
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Empleado creado correctamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else {
+
+}
+
 <div class="card">
     <div class="card-body">
-        <form class="row g-3">
+        <form class="row g-3" method="POST">
             <div class="col-md-8">
                 <label for="NombreEmpleado" class="form-label">Nombre Completo</label>
-                <input type="text" class="form-control" id="NombreEmpleado" aria-describedby="emailHelp">
+                <input asp-for="Empleado.Nombre" type="text" class="form-control" id="NombreEmpleado"
+                    aria-describedby="emailHelp">
             </div>
             <div class="col-md-4">
                 <label for="FechaNacimientoEmpleado" class="form-label">Fecha de Nacimiento</label>
-                <input type="text" class="form-control" id="FechaNacimientoEmpleado">
+                <input asp-for="Empleado.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
+                    class="form-control" data-date-format="mm/dd/yyyy" id="FechaNacimientoEmpleado">
             </div>
             <div class="col-md-6">
                 <br>
                 <label for="SueldoBrutoEmpleado" class="form-label">Sueldo Bruto</label>
-                <input type="text" class="form-control" id="SueldoBrutoEmpleado">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                    </div>
+                    <input asp-for="Empleado.Sueldo_Bruto" type="text" class="form-control" id="SueldoBrutoEmpleado">
+                </div>
             </div>
             <div class="col-md-6">
                 <br>
                 <label for="EmpresaEmpleado" class="form-label">Empresa</label>
-                <select class="form-control" aria-label="Default select example" id="EmpresaEmpleado">
-                    <option selected value="1">Empresa 1</option>
-                    <option value="2">Empresa 2</option>
-                    <option value="3">Empresa 3</option>
-                </select>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-building-o"></i></div>
+                    </div>
+                    <select asp-for="Empleado.IdEmpresa"
+                        asp-items="@(new SelectList(Model.listadoEmpresas,"Id","Nombre"))" class="form-control"
+                        aria-label="Default select example" id="EmpresaEmpleado">
+                    </select>
+                </div>
             </div>
             <div class="col-md-6">
                 <br>
                 <label for="DirectivoEmpleado" class="form-label">Directivo</label>
-                <select class="form-control" aria-label="Default select example" id="DirectivoEmpleado">
-                    <option selected value="1">Directivo 1</option>
-                    <option value="2">Directivo 2</option>
-                    <option value="3">Directivo 3</option>
-                </select>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-users"></i></div>
+                    </div>
+                    <select asp-for="Empleado.IdDirectivo"
+                        asp-items="@(new SelectList(Model.listadoDirectivos,"Id","Nombre"))" class="form-control"
+                        aria-label="Default select example" id="DirectivoEmpleado">
+                    </select>
+                </div>
                 <br>
             </div>
             <div class="col-md-12">

@@ -219,11 +219,11 @@ namespace Consola
         static void crearDirectivo() {
 
             Directivo directivo = new Directivo(){
-                Nombre = "Ana Sofia Alvarez Gónzales",
-                Fecha_Nacimiento = new DateTime(1995,8,10),
-                Sueldo_Bruto = 2200000,
-                Categoria = 1,
-                IdEmpresa = 1
+                Nombre = "David José Manrique Perez",
+                Fecha_Nacimiento = new DateTime(1992,7,11),
+                Sueldo_Bruto = 2500000,
+                Categoria = 2,
+                IdEmpresa = 4
             };
 
             Directivo directivoCreado = repositorioDirectivo.Crear(directivo);
