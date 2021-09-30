@@ -5814,32 +5814,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pibe7\\.nuget\\packages\\": {}
+    "C:\\Users\\OJGon\\.nuget\\packages\\": {},
+    "E:\\MVisualStudio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\obj\\",
+      "projectPath": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
+      "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
+      "outputPath": "E:\\Git\\TopDevTeam56\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\MVisualStudio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj"
+            "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
+              "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj"
             }
           }
         }
