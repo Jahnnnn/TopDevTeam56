@@ -16,3 +16,21 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Persistencia\obj\Debug\net5
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Persistencia\obj\Debug\net5.0\Persistencia.pdb
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Persistencia\obj\Debug\net5.0\Persistencia.genruntimeconfig.cache
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.deps.json
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.runtimeconfig.json
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.runtimeconfig.dev.json
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.dll
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\ref\Persistencia.dll
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Persistencia.pdb
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Dominio.dll
+E:\Git\TopDevTeam56\Persistencia\bin\Debug\net5.0\Dominio.pdb
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.csproj.AssemblyReference.cache
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfoInputs.cache
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfo.cs
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CoreCompileInputs.cache
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CopyComplete
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.dll
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.pdb
+E:\Git\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.genruntimeconfig.cache

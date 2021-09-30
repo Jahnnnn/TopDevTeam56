@@ -10,3 +10,15 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Dominio\bin\Debug\net5.0\Do
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Dominio\obj\Debug\net5.0\Dominio.dll
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Dominio\obj\Debug\net5.0\ref\Dominio.dll
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Dominio\obj\Debug\net5.0\Dominio.pdb
+E:\Git\TopDevTeam56\Dominio\bin\Debug\net5.0\Dominio.deps.json
+E:\Git\TopDevTeam56\Dominio\bin\Debug\net5.0\Dominio.dll
+E:\Git\TopDevTeam56\Dominio\bin\Debug\net5.0\ref\Dominio.dll
+E:\Git\TopDevTeam56\Dominio\bin\Debug\net5.0\Dominio.pdb
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.csproj.AssemblyReference.cache
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.dll
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\ref\Dominio.dll
+E:\Git\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.pdb
