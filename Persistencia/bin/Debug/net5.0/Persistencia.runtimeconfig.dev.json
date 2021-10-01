@@ -1,9 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\OJGon\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\OJGon\\.nuget\\packages",
-      "E:\\MVisualStudio\\Shared\\NuGetPackages"
+      "C:\\Users\\pibe7\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\pibe7\\.nuget\\packages"
     ]
   }
 }
