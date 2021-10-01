@@ -1,87 +1,133 @@
-const inputFechaNacimientoEmpleado = document.getElementById('FechaNacimientoEmpleado'),
-      inputNombreCompletoEmpleado = document.getElementById('NombreCompletoEmpleado'),
-      inputSueldoBrutoEmpleado = document.getElementById('SueldoBrutoEmpleado'),
-      botonCrearEmpleado = document.getElementById('CrearEmpleado'),
-      smallMensajeValidacionNombreCompletoEmpleado = document.getElementById('MensajeValidacionCampoNombreCompletoEmpleado'),
-      smallMensajeValidacionSueldoBrutoEmpleado = document.getElementById('MensajeValidacionCampoSueldoBrutoEmpleado');
-
 let estadoValorNombreCompletoEmpleado = false,
     estadoValorSueldoBrutoEmpleado = false;
 
-inputFechaNacimientoEmpleado.valueAsDate = new Date();
+$(document).ready(function () {
 
-inputNombreCompletoEmpleado.addEventListener('change', function() {
+    let date = new Date();
+    let day;
 
-    let valueInputNombreCompletoEmpleado = this.value;
-
-    if((/^([\s])*$/.test(valueInputNombreCompletoEmpleado))) {
-        this.classList.remove('is-valid');
-        this.classList.add('is-invalid');
-        smallMensajeValidacionNombreCompletoEmpleado.innerHTML='El campo Nombre Completo no puede estar vacío.';
-        smallMensajeValidacionNombreCompletoEmpleado.classList.add('valid-feedback');
-        smallMensajeValidacionNombreCompletoEmpleado.classList.add('invalid-feedback');
-        estadoValorNombreCompletoEmpleado = false;
-        activarBotonCrear();
-    }
-    else if(!(/^([a-zA-ZñÑáÁéÉíÍóÓúÚ\s])*$/.test(valueInputNombreCompletoEmpleado))) {
-        this.classList.remove('is-valid');
-        this.classList.add('is-invalid');
-        smallMensajeValidacionNombreCompletoEmpleado.innerHTML='El valor ingresado no es válido.';
-        smallMensajeValidacionNombreCompletoEmpleado.classList.add('valid-feedback');
-        smallMensajeValidacionNombreCompletoEmpleado.classList.add('invalid-feedback');
-        estadoValorNombreCompletoEmpleado = false;
-        activarBotonCrear();
+    if (date.getDate() <= 9) {
+        day = "0" + date.getDate();
     }
     else {
-        this.classList.remove('is-invalid');
-        this.classList.add('is-valid');
-        smallMensajeValidacionNombreCompletoEmpleado.innerHTML='El valor ingresado es válido.'
-        smallMensajeValidacionNombreCompletoEmpleado.classList.remove('invalid-feedback');
-        smallMensajeValidacionNombreCompletoEmpleado.classList.add('valid-feedback');
-        estadoValorNombreCompletoEmpleado = true;
-        activarBotonCrear();
+        day = date.getDate();
     }
+
+    $("#FechaNacimientoEmpleado").val(date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + day);
 });
 
-inputSueldoBrutoEmpleado.addEventListener('change', function() {
 
-    let valueInputSueldoBrutoEmpleado = this.value;
 
-    if((/^([\s])*$/.test(valueInputSueldoBrutoEmpleado))) {
-        this.classList.remove('is-valid');
-        this.classList.add('is-invalid');
-        smallMensajeValidacionSueldoBrutoEmpleado.innerHTML='El campo Sueldo Bruto no puede estar vacío.';
-        smallMensajeValidacionSueldoBrutoEmpleado.classList.add('valid-feedback');
-        smallMensajeValidacionSueldoBrutoEmpleado.classList.add('invalid-feedback');
-        estadoValorSueldoBrutoEmpleado = false;
-        activarBotonCrear();
-    }
-    else if(!(/^([0-9])*$/.test(valueInputSueldoBrutoEmpleado))) {
-        this.classList.remove('is-valid');
-        this.classList.add('is-invalid');
-        smallMensajeValidacionSueldoBrutoEmpleado.innerHTML='El valor ingresado no es válido.';
-        smallMensajeValidacionSueldoBrutoEmpleado.classList.add('valid-feedback');
-        smallMensajeValidacionSueldoBrutoEmpleado.classList.add('invalid-feedback');
-        estadoValorSueldoBrutoEmpleado = false;
-        activarBotonCrear();
-    }
-    else {
-        this.classList.remove('is-invalid');
-        this.classList.add('is-valid');
-        smallMensajeValidacionSueldoBrutoEmpleado.innerHTML='El valor ingresado es válido.'
-        smallMensajeValidacionSueldoBrutoEmpleado.classList.remove('invalid-feedback');
-        smallMensajeValidacionSueldoBrutoEmpleado.classList.add('valid-feedback');
-        estadoValorSueldoBrutoEmpleado = true;
-        activarBotonCrear();
-    }
+$(document).ready(function () {
+
+    $("#NombreCompletoEmpleado").change(function() {
+
+        let valueInputNombreCompletoEmpleado = $("#NombreCompletoEmpleado").val();
+
+        if ((/^([\s])*$/.test(valueInputNombreCompletoEmpleado))) {
+
+            $("#NombreCompletoEmpleado").removeClass("is-valid")
+                                        .addClass("is-invalid");
+            
+            $("#MensajeValidacionCampoNombreCompletoEmpleado").html("El campo Nombre Completo no puede estar vacío.")
+                                                              .removeClass("valid-feedback")
+                                                              .addClass("invalid-feedback");
+
+            estadoValorNombreCompletoEmpleado = false;
+            activarBotonCrear();
+
+        }
+        else if (!(/^([a-zA-ZñÑáÁéÉíÍóÓúÚ\s])*$/.test(valueInputNombreCompletoEmpleado))) {
+
+            $("#NombreCompletoEmpleado").removeClass("is-valid")
+                                        .addClass("is-invalid");
+
+            $("#MensajeValidacionCampoNombreCompletoEmpleado").html("El valor ingresado no es válido.")
+                                                              .removeClass("valid-feedback")
+                                                              .addClass("invalid-feedback");
+
+            estadoValorNombreCompletoEmpleado = false;
+            activarBotonCrear();
+
+        }
+        else {
+
+            $("#NombreCompletoEmpleado").removeClass("is-invalid")
+                                        .addClass("is-valid");
+
+            $("#MensajeValidacionCampoNombreCompletoEmpleado").html("El valor ingresado es válido.")
+                                                              .removeClass("invalid-feedback")
+                                                              .addClass("valid-feedback");
+
+            estadoValorNombreCompletoEmpleado = true;
+            activarBotonCrear();
+
+        }
+    });
+
+});
+
+
+$(document).ready(function () {
+
+    $("#SueldoBrutoEmpleado").change(function() {
+
+        let valueInputSueldoBrutoEmpleado = $("#SueldoBrutoEmpleado").val();
+
+        if ((/^([\s])*$/.test(valueInputSueldoBrutoEmpleado))) {
+
+            $("#SueldoBrutoEmpleado").removeClass("is-valid")
+                                     .addClass("is-invalid");
+
+            $("#MensajeValidacionCampoSueldoBrutoEmpleado").html("El campo Sueldo Bruto no puede estar vacío.")
+                                                           .removeClass("valid-feedback")
+                                                           .addClass("invalid-feedback");
+
+            estadoValorSueldoBrutoEmpleado = false;
+            activarBotonCrear();
+
+        }
+        else if (!(/^([0-9])*$/.test(valueInputSueldoBrutoEmpleado))) {
+
+            $("#SueldoBrutoEmpleado").removeClass("is-valid")
+                                     .addClass("is-invalid");
+
+            $("#MensajeValidacionCampoSueldoBrutoEmpleado").html("El valor ingresado no es válido.")
+                                                           .removeClass("valid-feedback")
+                                                           .addClass("invalid-feedback");
+
+            estadoValorSueldoBrutoEmpleado = false;
+            activarBotonCrear();
+
+        }
+        else {
+
+            $("#SueldoBrutoEmpleado").removeClass("is-invalid")
+                                     .addClass("is-valid");
+
+            $("#MensajeValidacionCampoSueldoBrutoEmpleado").html("El valor ingresado es válido.")
+                                                           .removeClass("invalid-feedback")
+                                                           .addClass("valid-feedback");
+
+            estadoValorSueldoBrutoEmpleado = true;
+            activarBotonCrear();
+
+        }
+
+    });
+
 });
 
 function activarBotonCrear() {
-    
-    if(estadoValorNombreCompletoEmpleado && estadoValorSueldoBrutoEmpleado) {
-        botonCrearEmpleado.disabled = false;
+
+    if (estadoValorNombreCompletoEmpleado && estadoValorSueldoBrutoEmpleado) {
+
+        $("#CrearEmpleado").prop('disabled', false);
+
     }
     else {
-        botonCrearEmpleado.disabled = true;
+
+        $("#CrearEmpleado").prop('disabled', true);
+
     }
 }
