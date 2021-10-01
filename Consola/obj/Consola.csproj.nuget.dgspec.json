@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Git\\TopDevTeam56\\Consola\\Consola.csproj": {}
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "E:\\Git\\TopDevTeam56\\Consola\\Consola.csproj": {
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Consola\\Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\TopDevTeam56\\Consola\\Consola.csproj",
+        "projectUniqueName": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Consola\\Consola.csproj",
         "projectName": "Consola",
-        "projectPath": "E:\\Git\\TopDevTeam56\\Consola\\Consola.csproj",
-        "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\TopDevTeam56\\Consola\\obj\\",
+        "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Consola\\Consola.csproj",
+        "packagesPath": "C:\\Users\\DIEGO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Consola\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\MVisualStudio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DIEGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
-                "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj"
+              "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj"
               },
-              "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -75,21 +71,17 @@
         }
       }
     },
-    "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\TopDevTeam56\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\DIEGO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\MVisualStudio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DIEGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,21 +125,17 @@
         }
       }
     },
-    "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\TopDevTeam56\\Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\DIEGO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\MVisualStudio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DIEGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,8 +149,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
-                "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj"
+              "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj"
               }
             }
           }

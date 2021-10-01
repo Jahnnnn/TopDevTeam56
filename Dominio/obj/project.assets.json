@@ -8,11 +8,16 @@
     "net5.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\pibe7\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\DIEGO\\.nuget\\packages\\": {}
+>>>>>>> cca3138dc44fa18732c6a6f8889ad1f500da3d10
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
       "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
@@ -21,6 +26,17 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
+      "projectName": "Dominio",
+      "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\DIEGO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\DIEGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> cca3138dc44fa18732c6a6f8889ad1f500da3d10
       ],
       "originalTargetFrameworks": [
         "net5.0"

@@ -1,0 +1,123 @@
+﻿@page
+@model FrontEnd.Pages.Empleados.ListadoModel
+@{
+}
+
+<h2 class="text-center">Empleados</h2>
+<br>
+@if (Model.empleadoCreado == 0)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡No se pudo crear el Empleado, intentelo de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if(Model.empleadoCreado == 1) 
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Empleado creado correctamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else {
+
+}
+
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" method="POST">
+            <div class="col-md-8">
+                <label for="NombreEmpleado" class="form-label">Nombre Completo</label>
+                <input asp-for="Empleado.Nombre" type="text" class="form-control" id="NombreEmpleado"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-4">
+                <label for="FechaNacimientoEmpleado" class="form-label">Fecha de Nacimiento</label>
+                <input asp-for="Empleado.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
+                    class="form-control" data-date-format="mm/dd/yyyy" id="FechaNacimientoEmpleado">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="SueldoBrutoEmpleado" class="form-label">Sueldo Bruto</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                    </div>
+                    <input asp-for="Empleado.Sueldo_Bruto" type="text" class="form-control" id="SueldoBrutoEmpleado">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="EmpresaEmpleado" class="form-label">Empresa</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-building-o"></i></div>
+                    </div>
+                    <select asp-for="Empleado.IdEmpresa"
+                        asp-items="@(new SelectList(Model.listadoEmpresas,"Id","Nombre"))" class="form-control"
+                        aria-label="Default select example" id="EmpresaEmpleado">
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="DirectivoEmpleado" class="form-label">Directivo</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-users"></i></div>
+                    </div>
+                    <select asp-for="Empleado.IdDirectivo"
+                        asp-items="@(new SelectList(Model.listadoDirectivos,"Id","Nombre"))" class="form-control"
+                        aria-label="Default select example" id="DirectivoEmpleado">
+                    </select>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Crear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<h4>Listado de Empleados</h4>
+<br>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Sueldo Bruto</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var empleado in Model.listadoEmpleados)
+        {
+            <tr>
+                <th scope="row">@empleado.Id</th>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Fecha_Nacimiento.ToShortDateString()</td>
+                <td>@empleado.Sueldo_Bruto.ToString("C")</td>
+                <td>
+                    <a href="#" class="btn btn-success">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-info">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
