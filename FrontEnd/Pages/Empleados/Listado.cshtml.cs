@@ -8,9 +8,9 @@ using System.ComponentModel.DataAnnotations;
 using Dominio;
 using Persistencia.Repositorios;
 
-namespace FrontEnd.Pages
+namespace FrontEnd.Pages.Empleados
 {
-    public class ListadoEmpleadosModel : PageModel
+    public class ListadoModel : PageModel
     {
         private readonly IRepositorioEmpleado _repositorioEmpleado;
         private readonly IRepositorioEmpresa _repositorioEmpresa;
@@ -25,7 +25,7 @@ namespace FrontEnd.Pages
 
         public int empleadoCreado { get; set;}
 
-        public ListadoEmpleadosModel(IRepositorioEmpleado repositorioEmpleado, IRepositorioEmpresa repositorioEmpresa, IRepositorioDirectivo repositorioDirectivo) {
+        public ListadoModel(IRepositorioEmpleado repositorioEmpleado, IRepositorioEmpresa repositorioEmpresa, IRepositorioDirectivo repositorioDirectivo) {
 
             _repositorioEmpleado = repositorioEmpleado;
             _repositorioEmpresa = repositorioEmpresa;
