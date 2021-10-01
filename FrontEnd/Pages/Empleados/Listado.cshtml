@@ -31,9 +31,9 @@ else {
     <div class="card-body">
         <form class="row g-3" method="POST">
             <div class="col-md-8">
-                <label for="NombreEmpleado" class="form-label">Nombre Completo</label>
-                <input asp-for="Empleado.Nombre" type="text" class="form-control" id="NombreEmpleado"
-                    aria-describedby="emailHelp">
+                <label for="NombreCompletoEmpleado" class="form-label">Nombre Completo</label>
+                <input asp-for="Empleado.Nombre" type="text" class="form-control" id="NombreCompletoEmpleado">
+                <small id="MensajeValidacionCampoNombreCompletoEmpleado"></small>
             </div>
             <div class="col-md-4">
                 <label for="FechaNacimientoEmpleado" class="form-label">Fecha de Nacimiento</label>
@@ -48,6 +48,7 @@ else {
                         <div class="input-group-text">$</div>
                     </div>
                     <input asp-for="Empleado.Sueldo_Bruto" type="text" class="form-control" id="SueldoBrutoEmpleado">
+                    <small id="MensajeValidacionCampoSueldoBrutoEmpleado"></small>
                 </div>
             </div>
             <div class="col-md-6">
@@ -79,7 +80,7 @@ else {
             </div>
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Crear</button>
+                    <button type="submit" class="btn btn-success" id="CrearEmpleado" disabled>Crear</button>
                 </div>
             </div>
         </form>
