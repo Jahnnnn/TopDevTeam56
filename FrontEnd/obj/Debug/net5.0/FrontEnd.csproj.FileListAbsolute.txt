@@ -238,3 +238,4 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\R
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Listado.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Listado.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Listado.cshtml.g.cs
+C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Detalle.cshtml.g.cs

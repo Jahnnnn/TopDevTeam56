@@ -7,8 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Dominio
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Dominio\
-=======
 build_property.ProjectDir = C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\Dominio\
->>>>>>> cca3138dc44fa18732c6a6f8889ad1f500da3d10

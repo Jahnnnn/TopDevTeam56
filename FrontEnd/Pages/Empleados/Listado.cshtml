@@ -107,13 +107,13 @@ else {
                 <td>@empleado.Fecha_Nacimiento.ToShortDateString()</td>
                 <td>@empleado.Sueldo_Bruto.ToString("C")</td>
                 <td>
-                    <a href="#" class="btn btn-success">
+                    <a asp-page="./Detalle" asp-route-Id="@empleado.Id" class="btn btn-success">
                         <i class="fa fa-search"></i>
                     </a>
-                    <a href="#" class="btn btn-info">
+                    <a asp-page="#" class="btn btn-info">
                         <i class="fa fa-pencil"></i>
                     </a>
-                    <a href="#" class="btn btn-danger">
+                    <a asp-page="#" class="btn btn-danger">
                         <i class="fa fa-trash-o"></i>
                     </a>
                 </td>
