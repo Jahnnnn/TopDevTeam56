@@ -1,22 +1,21 @@
 ﻿@page
-@model FrontEnd.Pages.Empleados.ListadoModel
+@model FrontEnd.Pages.Empleados.ActualizarModel
 @{
 }
-
-<h4 class="text-center">AGREGAR EMPLEADO</h4>
-@if (Model.empleadoCreado == 0)
+<h4 class="text-center">ACTUALIZAR EMPLEADO</h4>
+@if (Model.empleadoActualizado == 0)
 {
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>¡No se pudo crear el Empleado, intentelo de nuevo!</strong>
+        <strong>¡No se pudo actualizar el Empleado, intentelo de nuevo!</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
 }
-else if(Model.empleadoCreado == 1) 
+else if(Model.empleadoActualizado == 1) 
 {
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>¡Empleado creado correctamente!</strong>
+        <strong>¡Empleado actualizado correctamente!</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -29,15 +28,16 @@ else {
 <div class="card">
     <div class="card-body">
         <form class="row g-3" method="POST">
+            <input type="hidden" id="IdEmpleado" asp-for="Empleado.Id">
             <div class="col-md-8">
                 <label for="NombreCompletoEmpleado" class="form-label">Nombre Completo</label>
                 <input asp-for="Empleado.Nombre" type="text" class="form-control" id="NombreCompletoEmpleado">
                 <small id="MensajeValidacionCampoNombreCompletoEmpleado"></small>
             </div>
             <div class="col-md-4">
-                <label for="FechaNacimientoEmpleado" class="form-label">Fecha de Nacimiento</label>
+                <label for="FechaNacimientoEmpleadoA" class="form-label">Fecha de Nacimiento</label>
                 <input asp-for="Empleado.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
-                    class="form-control" id="FechaNacimientoEmpleadoC">
+                    class="form-control" value="@Model.Empleado.Fecha_Nacimiento.ToString("yyyy-MM-dd")" id="FechaNacimientoEmpleadoA">
             </div>
             <div class="col-md-6">
                 <br>
@@ -79,44 +79,14 @@ else {
             </div>
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success" id="CrearEmpleado" disabled>Crear</button>
+                    <button type="submit" class="btn btn-info" id="ActualizarEmpleado">Actualizar</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
 <br>
-<h4>LISTADO DE EMPLEADOS</h4>
-<table class="table">
-    <thead class="table-dark text-center">
-        <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Fecha de Nacimiento</th>
-            <th scope="col">Sueldo Bruto</th>
-            <th scope="col">Acciones</th>
-        </tr>
-    </thead>
-    <tbody class="text-center">
-        @foreach (var empleado in Model.listadoEmpleados)
-        {
-            <tr>
-                <th scope="row">@empleado.Id</th>
-                <td>@empleado.Nombre</td>
-                <td>@empleado.Fecha_Nacimiento.ToShortDateString()</td>
-                <td>@empleado.Sueldo_Bruto.ToString("C")</td>
-                <td>
-                    <a asp-page="./Detalle" asp-route-Id="@empleado.Id" class="btn btn-success">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <a asp-page="./Actualizar" asp-route-Id="@empleado.Id" class="btn btn-info">
-                        <i class="fa fa-pencil"></i>
-                    </a>
-                    <a asp-page="#" class="btn btn-danger">
-                        <i class="fa fa-trash-o"></i>
-                    </a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<a asp-page="./Listado" class="btn btn-warning">
+    <i class="fa fa-arrow-left"></i>
+    Regresar
+</a>
