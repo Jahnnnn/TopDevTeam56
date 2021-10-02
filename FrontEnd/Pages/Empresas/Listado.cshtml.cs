@@ -21,7 +21,7 @@ namespace FrontEnd.Pages.Empresas
         public Empresa Empresa {get;set;}
         public int empresaCreada {get;set;}
 
-        public ListaModel(IRepositorioEmpresa repoEmpresa){
+        public ListadoModel(IRepositorioEmpresa repoEmpresa){
             _repoEmpresa = repoEmpresa;
         }
         public void OnGet()

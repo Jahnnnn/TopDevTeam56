@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Qo54+n8YeLI/eQYYdgOeoKEIz3ApTFmeBFrSsHC8nU7f+7OMTGq20JZRo3SiFK+AffEauqc8uuOAXvakZ0arQ==",
+  "dgSpecHash": "G6/ZhLc6lyTW9KEEAZhKmlPFQetGIezRVVzC8rDoxCnTziskinUKT9MbhPxNlMLULhJN9aiVi6E4xEDGwa6I/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
+  "projectFilePath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
