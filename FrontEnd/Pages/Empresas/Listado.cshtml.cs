@@ -26,8 +26,21 @@ namespace FrontEnd.Pages.Empresas
         }
         public void OnGet()
         {
+            empresaCreada = 2;
             listadoEmpresas = _repoEmpresa.Obtener();
 
+        }
+
+        public IActionResult OnPost(){
+            Empresa = _repoEmpresa.Crear(Empresa);
+
+            if(Empresa != null){
+                empresaCreada = 1;
+            }else{
+                empresaCreada = 0;
+            }
+
+            return Page();
         }
     }
 }

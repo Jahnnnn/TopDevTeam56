@@ -241,3 +241,4 @@ E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Detalle.csht
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Listado.cshtml.g.cs
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Listado.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Actualizar.cshtml.g.cs
+E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Actualizar.cshtml.g.cs
