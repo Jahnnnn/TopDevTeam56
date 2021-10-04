@@ -40,6 +40,7 @@ namespace FrontEnd.Pages.Empresas
                 empresaCreada = 0;
             }
 
+            listadoEmpresas = _repoEmpresa.Obtener();
             return Page();
         }
     }
