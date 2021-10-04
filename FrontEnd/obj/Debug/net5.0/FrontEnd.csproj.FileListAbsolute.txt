@@ -212,10 +212,6 @@ C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\F
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\FrontEnd.TagHelpers.input.cache
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\FrontEnd.TagHelpers.output.cache
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\FrontEnd.RazorCoreGenerate.cache
-C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\ListadoClientes.cshtml.g.cs
-C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\ListadoDirectivos.cshtml.g.cs
-C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\ListadoEmpleados.cshtml.g.cs
-C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\ListadoEmpresas.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
@@ -238,3 +234,7 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\R
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Listado.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Listado.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Listado.cshtml.g.cs
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Listado.cshtml.g.cs
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Listado.cshtml.g.cs
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Listado.cshtml.g.cs
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Listado.cshtml.g.cs

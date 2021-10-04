@@ -1,13 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\pibe7\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\pibe7\\.nuget\\packages"
-=======
-      "C:\\Users\\DIEGO\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\DIEGO\\.nuget\\packages"
->>>>>>> cca3138dc44fa18732c6a6f8889ad1f500da3d10
     ]
   }
 }
