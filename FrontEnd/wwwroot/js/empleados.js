@@ -1,7 +1,7 @@
 let estadoValorNombreCompletoEmpleado = false,
     estadoValorSueldoBrutoEmpleado = false;
 
-function activarBotonCrear() {
+function activarBotonesEmpleado() {
 
     if (estadoValorNombreCompletoEmpleado && estadoValorSueldoBrutoEmpleado) {
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
                 .addClass("invalid-feedback");
 
             estadoValorNombreCompletoEmpleado = false;
-            activarBotonCrear();
+            activarBotonesEmpleado();
 
         }
         else if (!(/^([a-zA-ZñÑáÁéÉíÍóÓúÚ\s])*$/.test(valueInputNombreCompletoEmpleado))) {
@@ -80,7 +80,7 @@ $(document).ready(function () {
                 .addClass("invalid-feedback");
 
             estadoValorNombreCompletoEmpleado = false;
-            activarBotonCrear();
+            activarBotonesEmpleado();
 
         }
         else {
@@ -93,7 +93,7 @@ $(document).ready(function () {
                 .addClass("valid-feedback");
 
             estadoValorNombreCompletoEmpleado = true;
-            activarBotonCrear();
+            activarBotonesEmpleado();
 
         }
 
@@ -118,7 +118,7 @@ $(document).ready(function () {
                 .addClass("invalid-feedback");
 
             estadoValorSueldoBrutoEmpleado = false;
-            activarBotonCrear();
+            activarBotonesEmpleado();
 
         }
         else if (!(/^([0-9])*$/.test(valueInputSueldoBrutoEmpleado))) {
@@ -131,7 +131,7 @@ $(document).ready(function () {
                 .addClass("invalid-feedback");
 
             estadoValorSueldoBrutoEmpleado = false;
-            activarBotonCrear();
+            activarBotonesEmpleado();
 
         }
         else {
@@ -144,10 +144,11 @@ $(document).ready(function () {
                 .addClass("valid-feedback");
 
             estadoValorSueldoBrutoEmpleado = true;
-            activarBotonCrear();
+            activarBotonesEmpleado();
 
         }
 
     });
 
 });
+

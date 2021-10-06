@@ -24,19 +24,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	let date = new Date();
-	let day;
-
-	if (date.getDate() <= 9) {
-		day = '0' + date.getDate();
-	} else {
-		day = date.getDate();
-	}
-
-	$('#FechaNacimientoEmpleadoC').val(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + day);
-});
-
-$(document).ready(function() {
 	$('#NombreEmpresa').keyup(function() {
 		let valueInputNombreEmpresa = $('#NombreEmpresa').val();
 
