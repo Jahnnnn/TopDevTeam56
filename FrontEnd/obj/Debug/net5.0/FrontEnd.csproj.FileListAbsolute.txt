@@ -246,3 +246,4 @@ E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Actualizar.cs
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Detalle.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Actualizar.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Detalle.cshtml.g.cs
+C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs
