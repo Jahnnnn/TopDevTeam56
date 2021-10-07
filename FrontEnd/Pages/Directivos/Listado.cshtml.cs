@@ -35,5 +35,23 @@ namespace FrontEnd.Pages.Directivos
             listadoDirectivos = _repositorioDirectivo.Obtener();
             listadoEmpresas = _repositorioEmpresa.Obtener();
         }
+
+        public IActionResult OnPost() 
+        {
+            Directivo = _repositorioDirectivo.Crear(Directivo);
+            listadoDirectivos = _repositorioDirectivo.Obtener();
+            listadoEmpresas = _repositorioEmpresa.Obtener();
+
+            if(Directivo != null)
+            {
+                estadoDirectivo = 1;
+            }
+            else {
+
+                estadoDirectivo = 0;
+            }
+            
+            return Page();
+        }
     }
 }

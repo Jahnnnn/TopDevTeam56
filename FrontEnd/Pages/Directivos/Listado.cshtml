@@ -77,7 +77,7 @@ else {
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="fa fa-list-ol"></i></div>
                     </div>
-                    <select id="CategoriaDirectivo" class="form-control">
+                    <select asp-for="Directivo.Categoria" id="CategoriaDirectivo" class="form-control">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -101,7 +101,7 @@ else {
             </div>
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success" id="CrearDirectivo" disabled>Crear</button>
+                    <button type="submit" class="btn btn-success" id="CrearDirectivo">Crear</button>
                 </div>
             </div>
         </form>
