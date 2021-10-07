@@ -25,8 +25,6 @@ namespace FrontEnd.Pages.Empleados
 
         public int estadoEmpleado { get; set; }
 
-        public bool empleadoEliminado { get; set; }
-
         public ListadoModel(IRepositorioEmpleado repositorioEmpleado, IRepositorioEmpresa repositorioEmpresa, IRepositorioDirectivo repositorioDirectivo) {
 
             _repositorioEmpleado = repositorioEmpleado;
@@ -64,7 +62,7 @@ namespace FrontEnd.Pages.Empleados
 
         public IActionResult OnGetEliminarEmpleado(int id)
         {
-            empleadoEliminado = _repositorioEmpleado.Eliminar(id);
+            bool empleadoEliminado = _repositorioEmpleado.Eliminar(id);
             listadoEmpleados = _repositorioEmpleado.Obtener();
             listadoEmpresas = _repositorioEmpresa.Obtener();
             listadoDirectivos = _repositorioDirectivo.Obtener();

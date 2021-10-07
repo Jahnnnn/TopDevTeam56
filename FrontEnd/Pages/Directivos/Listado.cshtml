@@ -2,3 +2,184 @@
 @model FrontEnd.Pages.Directivos.ListadoModel
 @{
 }
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<h4 class="text-center">AGREGAR DIRECTIVO</h4>
+@if (Model.estadoDirectivo == 0)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡No se pudo crear el Directivo, intentelo de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if (Model.estadoDirectivo == 1)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Directivo creado correctamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if (Model.estadoDirectivo == 2)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡No se pudo eliminar el Directivo, intentelo de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if (Model.estadoDirectivo == 3)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Directivo eliminado correctamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else {
+    
+}
+
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" method="POST">
+            <div class="col-md-8">
+                <label for="NombreCompletoDirectivo" class="form-label">Nombre Completo</label>
+                <input asp-for="Directivo.Nombre" type="text" class="form-control" id="NombreCompletoDirectivo">
+                <small id="MensajeValidacionCampoNombreCompletoDirectivo"></small>
+            </div>
+            <div class="col-md-4">
+                <label for="FechaNacimientoDirectivo" class="form-label">Fecha de Nacimiento</label>
+                <input asp-for="Directivo.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
+                    class="form-control" id="FechaNacimientoDirectivoC">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="SueldoBrutoDirectivo" class="form-label">Sueldo Bruto</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                    </div>
+                    <input asp-for="Directivo.Sueldo_Bruto" type="text" class="form-control" id="SueldoBrutoDirectivo">
+                    <small id="MensajeValidacionCampoSueldoBrutoDirectivo"></small>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="CategoriaDirectivo" class="form-label">Categoría</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-list-ol"></i></div>
+                    </div>
+                    <select id="CategoriaDirectivo" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="EmpresaDirectivo" class="form-label">Empresa</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-building-o"></i></div>
+                    </div>
+                    <select asp-for="Directivo.IdEmpresa"
+                        asp-items="@(new SelectList(Model.listadoEmpresas,"Id","Nombre"))" class="form-control"
+                        aria-label="Default select example" id="EmpresaDirectivo">
+                    </select>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success" id="CrearDirectivo" disabled>Crear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<h4>LISTADO DE DIRECTIVOS</h4>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Sueldo Bruto</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var directivo in Model.listadoDirectivos)
+        {
+            <tr>
+                <th scope="row">@directivo.Id</th>
+                <td>@directivo.Nombre</td>
+                <td>@directivo.Fecha_Nacimiento.ToShortDateString()</td>
+                <td>@directivo.Sueldo_Bruto.ToString("C")</td>
+                <td>@directivo.Categoria</td>
+                <td>
+                    <a asp-page="#" asp-route-Id="@directivo.Id" class="btn btn-success">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <a asp-page="#" asp-route-Id="@directivo.Id" class="btn btn-info">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    <a asp-page="#" class="btn btn-danger" id="@String.Concat("EliminarDirectivo", @directivo.Id)">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+                </td>
+            </tr>
+
+            <div id="@String.Concat("ModalEliminarDirectivo", @directivo.Id)" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content border border-light rounded">
+                        <div class="modal-header bg-dark text-white">
+                            <h5 class="modal-title">Eliminar Directivo</h5>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p><strong>Nombre Completo: </strong>@directivo.Nombre</p>
+                                    <p><strong>Fecha de Nacimiento: </strong>@directivo.Fecha_Nacimiento.ToShortDateString()
+                                    </p>
+                                    <p><strong>Sueldo Bruto: </strong>@directivo.Sueldo_Bruto.ToString("C")</p>
+                                    <p><strong>Categoría: </strong>@directivo.Categoria</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
+                            id="@String.Concat("CancelarEliminacionDirectivo", @directivo.Id)">Cancelar</button>
+                            <a asp-page-handler="EliminarDirectivo" asp-route-id="@directivo.Id" class="btn btn-danger">Eliminar <i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("@String.Concat("#EliminarDirectivo", @directivo.Id)").click(function (e) {
+                        e.preventDefault();
+                        $("@String.Concat("#ModalEliminarDirectivo", @directivo.Id)").modal('show');
+                    });
+
+                    $("@String.Concat("#CancelarEliminacionDirectivo", @directivo.Id)").click(function () {
+                        $("@String.Concat("#ModalEliminarDirectivo", @directivo.Id)").modal('hide');
+                    });
+                });
+            </script>
+        }
+    </tbody>
+</table>
