@@ -53,5 +53,23 @@ namespace FrontEnd.Pages.Directivos
             
             return Page();
         }
+
+        public IActionResult OnGetEliminarDirectivo(int id)
+        {
+            bool directivoEliminado = _repositorioDirectivo.Eliminar(id);
+            listadoDirectivos = _repositorioDirectivo.Obtener();
+            listadoEmpresas = _repositorioEmpresa.Obtener();
+
+            if(directivoEliminado)
+            {
+                estadoDirectivo = 3;
+            }
+            else
+            {
+                estadoDirectivo = 2;
+            }
+            
+            return Page();
+        }
     }
 }
