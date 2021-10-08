@@ -13,6 +13,29 @@
     </div>
 </div>
 <br>
+<h4>LISTADO DE EMPLEADOS A CARGO</h4>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Sueldo Bruto</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var empleado in Model.listadoEmpleados)
+        {
+            <tr>
+                <th scope="row">@empleado.Id</th>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Fecha_Nacimiento.ToShortDateString()</td>
+                <td>@empleado.Sueldo_Bruto.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br>
 <a asp-page="./Listado" class="btn btn-warning">
     <i class="fa fa-arrow-left"></i>
     Regresar
