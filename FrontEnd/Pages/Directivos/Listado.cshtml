@@ -55,7 +55,7 @@ else {
                 <small id="MensajeValidacionCampoNombreCompletoDirectivo"></small>
             </div>
             <div class="col-md-4">
-                <label for="FechaNacimientoDirectivo" class="form-label">Fecha de Nacimiento</label>
+                <label for="FechaNacimientoDirectivoC" class="form-label">Fecha de Nacimiento</label>
                 <input asp-for="Directivo.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
                     class="form-control" id="FechaNacimientoDirectivoC">
             </div>
@@ -81,7 +81,7 @@ else {
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
-                        <option value="3">4</option>
+                        <option value="4">4</option>
                     </select>
                 </div>
             </div>
@@ -133,7 +133,7 @@ else {
                     <a asp-page="./Detalle" asp-route-Id="@directivo.Id" class="btn btn-success">
                         <i class="fa fa-search"></i>
                     </a>
-                    <a asp-page="#" asp-route-Id="@directivo.Id" class="btn btn-info">
+                    <a asp-page="./Actualizar" asp-route-Id="@directivo.Id" class="btn btn-info">
                         <i class="fa fa-pencil"></i>
                     </a>
                     <a asp-page="#" class="btn btn-danger" id="@String.Concat("EliminarDirectivo", @directivo.Id)">
