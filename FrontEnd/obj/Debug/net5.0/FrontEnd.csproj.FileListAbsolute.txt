@@ -258,3 +258,5 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\R
 >>>>>>> d99aab34f488b865052083e690b6b9b8b9a16816
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Actualizar.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs
+E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Actualizar.cshtml.g.cs
+E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs
