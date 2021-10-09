@@ -23,7 +23,7 @@ namespace FrontEnd.Pages.Empleados
         [BindProperty]
         public Empleado Empleado { get; set; }
 
-        public int empleadoCreado { get; set;}
+        public int estadoEmpleado { get; set; }
 
         public ListadoModel(IRepositorioEmpleado repositorioEmpleado, IRepositorioEmpresa repositorioEmpresa, IRepositorioDirectivo repositorioDirectivo) {
 
@@ -35,7 +35,7 @@ namespace FrontEnd.Pages.Empleados
 
         public void OnGet()
         {
-            empleadoCreado = 2;
+            estadoEmpleado = -1;
             listadoEmpleados = _repositorioEmpleado.Obtener();
             listadoEmpresas = _repositorioEmpresa.Obtener();
             listadoDirectivos = _repositorioDirectivo.Obtener();
@@ -50,11 +50,30 @@ namespace FrontEnd.Pages.Empleados
 
             if(Empleado != null)
             {
-                empleadoCreado = 1;
+                estadoEmpleado = 1;
             }
             else {
 
-                empleadoCreado = 0;
+                estadoEmpleado = 0;
+            }
+            
+            return Page();
+        }
+
+        public IActionResult OnGetEliminarEmpleado(int id)
+        {
+            bool empleadoEliminado = _repositorioEmpleado.Eliminar(id);
+            listadoEmpleados = _repositorioEmpleado.Obtener();
+            listadoEmpresas = _repositorioEmpresa.Obtener();
+            listadoDirectivos = _repositorioDirectivo.Obtener();
+
+            if(empleadoEliminado)
+            {
+                estadoEmpleado = 3;
+            }
+            else
+            {
+                estadoEmpleado = 2;
             }
             
             return Page();

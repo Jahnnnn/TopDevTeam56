@@ -22,10 +22,6 @@ namespace FrontEnd.Pages.Empleados
         [BindProperty]
         public Empleado Empleado { get; set; }
 
-        public Empresa Empresa { get; set; }
-
-        public Directivo Directivo { get; set; }
-
         public int empleadoActualizado { get; set;}
 
         public ActualizarModel(IRepositorioEmpleado repositorioEmpleado, IRepositorioEmpresa repositorioEmpresa, IRepositorioDirectivo repositorioDirectivo){
@@ -38,10 +34,8 @@ namespace FrontEnd.Pages.Empleados
 
         public void OnGet(int Id)
         {
-            empleadoActualizado = 2;
+            empleadoActualizado = -1;
             Empleado = _repositorioEmpleado.ObtenerPorId(Id);
-            Empresa = _repositorioEmpresa.ObtenerPorId(Empleado.IdEmpresa);
-            Directivo = _repositorioDirectivo.ObtenerPorId(Empleado.IdDirectivo);
             listadoEmpresas = _repositorioEmpresa.Obtener();
             listadoDirectivos = _repositorioDirectivo.Obtener();
         }
@@ -49,8 +43,6 @@ namespace FrontEnd.Pages.Empleados
         public IActionResult OnPost() 
         {
             Empleado = _repositorioEmpleado.Actualizar(Empleado);
-            Empresa = _repositorioEmpresa.ObtenerPorId(Empleado.IdEmpresa);
-            Directivo = _repositorioDirectivo.ObtenerPorId(Empleado.IdDirectivo);
             listadoEmpresas = _repositorioEmpresa.Obtener();
             listadoDirectivos = _repositorioDirectivo.Obtener();
 
