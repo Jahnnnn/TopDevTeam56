@@ -2,3 +2,83 @@
 @model FrontEnd.Pages.Empresas.ListadoModel
 @{
 }
+
+
+
+<h2 class="text-center">AGREGAR EMPRESA</h2>
+
+@if(Model.empresaCreada == 0){
+     <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡Empresa no creada, Intente de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if(Model.empresaCreada == 1) 
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Empresa creada satisfactoriamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else {
+
+}
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" method="POST">
+            <div class="col-md-12">
+                <label for="NombreEmpresa" class="form-label">Razon Social</label>
+                <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-12">
+                <label for="NitEmpresa" class="form-label">Nit Empresa</label>
+                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NitEmpresa"
+                    aria-describedby="emailHelp">
+                <br>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Crear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<h4>Listado de Empresas</h4>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">NIT</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var empresa in Model.listadoEmpresas)
+        {
+            <tr>
+                <th scope="row">@empresa.Id</th>
+                <td>@empresa.Nombre</td>
+                <td>@empresa.NIT</td>
+                <td>
+                    <a asp-page="./Detalle" asp-route-Id="@empresa.Id" class="btn btn-success">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <a asp-page="./Actualizar" asp-route-Id="@empresa.Id" class="btn btn-info">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    <a asp-page="#" class="btn btn-danger">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

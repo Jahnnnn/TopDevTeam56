@@ -1,0 +1,19 @@
+﻿@page
+@model FrontEnd.Pages.Empleados.DetalleModel
+@{
+}
+<h4 class="text-center">DETALLE DEL EMPLEADO</h4>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Nombre completo: </strong>@Model.Empleado.Nombre</p>
+        <p><strong>Fecha de nacimiento: </strong>@Model.Empleado.Fecha_Nacimiento.ToShortDateString()</p>
+        <p><strong>Sueldo bruto: </strong>@Model.Empleado.Sueldo_Bruto.ToString("C")</p>
+        <p><strong>Empresa a la que pertenece: </strong>@Model.Empresa.Nombre</p>
+        <p><strong>Directivo bajo el cual se encuentra a cargo: </strong>@Model.Directivo.Nombre</p>
+    </div>
+</div>
+<br>
+<a asp-page="./Listado" class="btn btn-warning">
+    <i class="fa fa-arrow-left"></i>
+    Regresar
+</a>
