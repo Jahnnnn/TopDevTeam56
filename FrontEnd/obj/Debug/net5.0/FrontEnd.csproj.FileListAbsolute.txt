@@ -246,15 +246,15 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\R
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Actualizar.cshtml.g.cs
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Actualizar.cshtml.g.cs
 E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Detalle.cshtml.g.cs
-<<<<<<< HEAD
 >>>>>>> 6d4d49869f4a527c3ed438494b954394e9ea3e3e
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Actualizar.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Detalle.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Actualizar.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Detalle.cshtml.g.cs
-=======
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Actualizar.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\Detalle.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs
 C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Actualizar.cshtml.g.cs
 >>>>>>> d99aab34f488b865052083e690b6b9b8b9a16816
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Actualizar.cshtml.g.cs
+C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs

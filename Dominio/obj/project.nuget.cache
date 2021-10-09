@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "PiPrapeBZ7IIqyjeRLI+seZKSPruuPRva5M5astiqeq9w7pROgGXh6kC6NgnOkV20bjg1nBxLZqu+JrFKJaKRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
-=======
-  "dgSpecHash": "8Qo54+n8YeLI/eQYYdgOeoKEIz3ApTFmeBFrSsHC8nU7f+7OMTGq20JZRo3SiFK+AffEauqc8uuOAXvakZ0arQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
->>>>>>> d99aab34f488b865052083e690b6b9b8b9a16816
   "expectedPackageFiles": [],
   "logs": [
     {
