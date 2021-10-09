@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -56,17 +56,17 @@
         }
       }
     },
-    "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\FrontEnd\\obj\\",
+        "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -78,11 +78,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj"
+              "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -118,17 +118,17 @@
         }
       }
     },
-    "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -140,8 +140,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj"
+              "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj"
               }
             }
           }

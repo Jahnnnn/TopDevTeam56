@@ -1,0 +1,79 @@
+﻿@page
+@model FrontEnd.Pages.Clientes.ActualizarModel
+@{
+}
+<h4 class="text-center">ACTUALIZAR CLIENTE</h4>
+@if (Model.clienteActualizado == 0)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡No se pudo actualizar el Cliente, intentelo de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if(Model.clienteActualizado == 1) 
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Cliente actualizado satisfactoriamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else {
+
+}
+
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" method="POST">
+            <input type="hidden" id="IdCliente" asp-for="Cliente.Id">
+            <div class="col-md-8">
+                <label for="NombreCompletoCliente" class="form-label">Nombre Completo</label>
+                <input asp-for="Cliente.Nombre" type="text" class="form-control" id="NombreCompletoCliente">
+                <small id="MensajeValidacionCampoNombreCompletoCliente"></small>
+            </div>
+            <div class="col-md-4">
+                <label for="FechaNacimientoClienteA" class="form-label">Fecha de Nacimiento</label>
+                <input asp-for="Cliente.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
+                    class="form-control" value="@Model.Cliente.Fecha_Nacimiento.ToString("yyyy-MM-dd")" id="FechaNacimientoClienteA">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="TelefonoCliente" class="form-label">Teléfono</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input asp-for="Cliente.Telefono" type="text" class="form-control" id="TelefonoCliente">
+                    <small id="MensajeValidacionCampoTelefonoCliente"></small>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <label for="EmpresaCliente" class="form-label">Empresa</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-building-o"></i></div>
+                    </div>
+                    <select asp-for="Cliente.IdEmpresa"
+                        asp-items="@(new SelectList(Model.listadoEmpresas,"Id","Nombre"))" class="form-control"
+                        aria-label="Default select example" id="EmpresaCliente">
+                    </select>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-info" id="ActualizarCliente">Actualizar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<a asp-page="./Listado" class="btn btn-warning">
+    <i class="fa fa-arrow-left"></i>
+    Regresar
+</a>

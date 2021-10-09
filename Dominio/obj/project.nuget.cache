@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PiPrapeBZ7IIqyjeRLI+seZKSPruuPRva5M5astiqeq9w7pROgGXh6kC6NgnOkV20bjg1nBxLZqu+JrFKJaKRA==",
+  "dgSpecHash": "4cid72Yx1lCujeoCbMpAzqWr0DKnn/B18Vb31gY29CfkmUpaQaHMcoWcq86ExBgE9g77bOy+UFCkbSrF8WecoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

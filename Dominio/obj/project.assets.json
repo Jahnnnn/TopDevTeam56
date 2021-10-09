@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pibe7\\.nuget\\packages\\": {}
+    "C:\\Users\\CINDY GODOY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\obj\\",
+      "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -61,13 +61,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\pibe7\\Desktop\\Juan\\Misión TIC\\Programación\\Ciclo 3- C#\\TopDevTeam56\\Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

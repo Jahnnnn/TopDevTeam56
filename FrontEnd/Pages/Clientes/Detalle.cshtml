@@ -1,0 +1,18 @@
+﻿@page
+@model FrontEnd.Pages.Clientes.DetalleModel
+@{
+}
+<h4 class="text-center">DETALLE DEL CLIENTE</h4>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Nombre completo: </strong>@Model.Cliente.Nombre</p>
+        <p><strong>Fecha de nacimiento: </strong>@Model.Cliente.Fecha_Nacimiento.ToShortDateString()</p>
+        <p><strong>Teléfono: </strong>@Model.Cliente.Telefono</p>
+        <p><strong>Empresa a la que pertenece: </strong>@Model.Empresa.Nombre</p>
+    </div>
+</div>
+<br>
+<a asp-page="./Listado" class="btn btn-warning">
+    <i class="fa fa-arrow-left"></i>
+    Regresar
+</a>
