@@ -52,3 +52,21 @@ C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\P
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.pdb
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Persistencia\obj\Debug\net5.0\Persistencia.genruntimeconfig.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Persistencia.deps.json
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Persistencia.runtimeconfig.json
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Persistencia.runtimeconfig.dev.json
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Persistencia.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\ref\Persistencia.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Persistencia.pdb
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Dominio.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\bin\Debug\net5.0\Dominio.pdb
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.csproj.AssemblyReference.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfoInputs.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfo.cs
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CopyComplete
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.pdb
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Persistencia\obj\Debug\net5.0\Persistencia.genruntimeconfig.cache

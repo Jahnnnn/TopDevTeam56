@@ -34,3 +34,15 @@ C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\D
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.dll
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Dominio\obj\Debug\net5.0\ref\Dominio.dll
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\Dominio\obj\Debug\net5.0\Dominio.pdb
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\bin\Debug\net5.0\Dominio.deps.json
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\bin\Debug\net5.0\Dominio.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\bin\Debug\net5.0\ref\Dominio.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\bin\Debug\net5.0\Dominio.pdb
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\ref\Dominio.dll
+C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\Dominio\obj\Debug\net5.0\Dominio.pdb

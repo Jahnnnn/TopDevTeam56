@@ -1,9 +1,14 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
+      "C:\\Users\\CINDY GODOY\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\CINDY GODOY\\.nuget\\packages"
+=======
       "C:\\Users\\OJGon\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\OJGon\\.nuget\\packages",
       "E:\\MVisualStudio\\Shared\\NuGetPackages"
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
     ]
   }
 }

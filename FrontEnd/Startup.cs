@@ -30,6 +30,7 @@ namespace FrontEnd
             services.AddSingleton<IRepositorioEmpleado, RepositorioEmpleado>();
             services.AddSingleton<IRepositorioEmpresa, RepositorioEmpresa>();
             services.AddSingleton<IRepositorioDirectivo, RepositorioDirectivo>();
+            services.AddSingleton<IRepositorioCliente, RepositorioCliente>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
