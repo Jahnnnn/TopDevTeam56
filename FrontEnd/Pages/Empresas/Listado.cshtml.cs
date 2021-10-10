@@ -53,6 +53,8 @@ namespace FrontEnd.Pages.Empresas
             else{
                 empresaCreada = 2;
             }
+
+            return Page();
         }
     }
 }

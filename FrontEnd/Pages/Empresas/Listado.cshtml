@@ -74,33 +74,31 @@ else {
                     <a asp-page="./Actualizar" asp-route-Id="@empresa.Id" class="btn btn-info">
                         <i class="fa fa-pencil"></i>
                     </a>
-                    <a asp-page="#" class="btn btn-danger" id="@String.Concat("Eliminar Empresa", @empresa.Id)">
+                    <a asp-page="#" class="btn btn-danger" id="@String.Concat("EliminarEmpresa", @empresa.Id)">
                         <i class="fa fa-trash-o"></i>
                     </a>
                 </td>
             </tr>
             
 
-            <div id="@String.Concat("ModalEliminarEmpleado", @empleado.Id)" class="modal" tabindex="-1">
+            <div id="@String.Concat("ModalEliminarEmpresa", @empresa.Id)" class="modal" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content border border-light rounded">
                         <div class="modal-header bg-dark text-white">
-                            <h5 class="modal-title">Eliminar Empleado</h5>
+                            <h5 class="modal-title">Eliminar Empresa</h5>
                         </div>
                         <div class="modal-body text-center">
                             <div class="card">
                                 <div class="card-body">
-                                    <p><strong>Nombre Completo: </strong>@empleado.Nombre</p>
-                                    <p><strong>Fecha de Nacimiento: </strong>@empleado.Fecha_Nacimiento.ToShortDateString()
-                                    </p>
-                                    <p><strong>Sueldo Bruto: </strong>@empleado.Sueldo_Bruto.ToString("C")</p>
+                                    <p><strong>Razon Social: </strong>@empresa.Nombre</p>
+                                    <p><strong>NIT: </strong>@empresa.NIT.ToString()</p>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
-                            id="@String.Concat("CancelarEliminacionEmpleado", @empleado.Id)">Cancelar</button>
-                            <a asp-page-handler="EliminarEmpleado" asp-route-id="@empleado.Id" class="btn btn-danger">Eliminar <i class="fa fa-trash-o"></i></a>
+                            id="@String.Concat("CancelarEliminacionEmpresa", @empresa.Id)">Cancelar</button>
+                            <a asp-page-handler="EliminarEmpresa" asp-route-id="@empresa.Id" class="btn btn-danger">Eliminar <i class="fa fa-trash-o"></i></a>
                         </div>
                     </div>
                 </div>
@@ -108,13 +106,13 @@ else {
 
             <script type="text/javascript">
                 $(document).ready(function () {
-                    $("@String.Concat("#EliminarEmpleado", @empleado.Id)").click(function (e) {
+                    $("@String.Concat("#EliminarEmpresa", @empresa.Id)").click(function (e) {
                         e.preventDefault();
-                        $("@String.Concat("#ModalEliminarEmpleado", @empleado.Id)").modal('show');
+                        $("@String.Concat("#ModalEliminarEmpresa", empresa.Id)").modal('show');
                     });
 
-                    $("@String.Concat("#CancelarEliminacionEmpleado", @empleado.Id)").click(function () {
-                        $("@String.Concat("#ModalEliminarEmpleado", @empleado.Id)").modal('hide');
+                    $("@String.Concat("#CancelarEliminacionEmpresa", @empresa.Id)").click(function () {
+                        $("@String.Concat("#ModalEliminarEmpresa", @empresa.Id)").modal('hide');
                     });
                 });
             </script>
