@@ -2,3 +2,54 @@
 @model FrontEnd.Pages.Empresas.ActualizarModel
 @{
 }
+
+<h2 class="text-center">AGREGAR EMPRESA</h2>
+
+@if(Model.empresaCreada == 0){
+     <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡Empresa no creada, Intente de nuevo!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else if(Model.empresaCreada == 1) 
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Empresa creada satisfactoriamente!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else {
+
+}
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" method="POST">
+            <div class="col-md-12">
+                <label for="NombreEmpresa" class="form-label">Razon Social</label>
+                <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-12">
+                <label for="NitEmpresa" class="form-label">Nit Empresa</label>
+                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NitEmpresa"
+                    aria-describedby="emailHelp">
+                <br>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Crear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<a asp-page="./Listado" class="btn btn-warning">
+    <i class="fa fa-arrow-left"></i>
+    Regresar
+</a>
