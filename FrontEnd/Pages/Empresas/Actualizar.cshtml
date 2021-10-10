@@ -3,20 +3,20 @@
 @{
 }
 
-<h2 class="text-center">AGREGAR EMPRESA</h2>
+<h2 class="text-center">Actualizar Empresa</h2>
 
-@if(Model.empresaCreada == 0){
+@if(Model.empresaActualizada == 0){
      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>¡Empresa no creada, Intente de nuevo!</strong>
+        <strong>¡No se ha podido actualizar la Empresa, Intente de Nuevo!</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
 }
-else if(Model.empresaCreada == 1) 
+else if(Model.empresaActualizada == 1) 
 {
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>¡Empresa creada satisfactoriamente!</strong>
+        <strong>¡Empresa Actualizada satisfactoriamente!</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -28,6 +28,7 @@ else {
 <div class="card">
     <div class="card-body">
         <form class="row g-3" method="POST">
+            <input type="hidden" id="IdEmpresa" asp-for="Empresa.Id">
             <div class="col-md-12">
                 <label for="NombreEmpresa" class="form-label">Razon Social</label>
                 <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa"
@@ -42,7 +43,7 @@ else {
             
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Crear</button>
+                    <button type="submit" class="btn btn-success">Actaulizar</button>
                 </div>
             </div>
         </form>

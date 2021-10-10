@@ -11,8 +11,32 @@ namespace FrontEnd.Pages.Empresas
 {
     public class ActualizarModel : PageModel
     {
+        private readonly IRepositorioEmpresa _repoEmpresa;
+
+        [BindProperty]
+
+        public Empresa Empresa {get;set;}
+        public int empresaActualizada {get;set;}
+
+        public ActualizarModel(IRepositorioEmpresa repoEmpresa){
+            _repoEmpresa = repoEmpresa;
+        }
         public void OnGet()
         {
+            empresaActualizada = -1;
+        }
+
+        public IActionResult OnPost(){
+            Empresa = _repoEmpresa.Actualizar(Empresa);
+
+            if(Empresa != null){
+                empresaActualizada = 1;
+            }else{
+                empresaActualizada = 0;
+            }
+
+            return Page();
         }
     }
+
 }
