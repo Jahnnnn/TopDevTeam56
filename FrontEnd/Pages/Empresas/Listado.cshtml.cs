@@ -26,7 +26,7 @@ namespace FrontEnd.Pages.Empresas
         }
         public void OnGet()
         {
-            empresaCreada = 2;
+            empresaCreada = -1;
             listadoEmpresas = _repoEmpresa.Obtener();
 
         }
@@ -42,6 +42,17 @@ namespace FrontEnd.Pages.Empresas
 
             listadoEmpresas = _repoEmpresa.Obtener();
             return Page();
+        }
+
+        public IActionResult OnGetEliminarEmpresa(int id){
+            bool empresaEliminada = _repoEmpresa.Eliminar(id);
+
+            if(empresaEliminada){
+                empresaCreada = 3;
+            }
+            else{
+                empresaCreada = 2;
+            }
         }
     }
 }
