@@ -28,13 +28,8 @@ namespace FrontEnd.Pages.Empresas
             _repoEmpleado = repositorioEmpleado;
             _repoCliente = repositorioCliente;
         }
-        public IActionResult OnGet(int Id){
+        public void OnGet(int Id){
             Empresa = _repoEmpresa.ObtenerPorId(Id);
-            if(Empresa == null){
-                return RedirectToPage("./NoEncontrado");
-            }else{
-                return Page();
-            }
             listadoDirectivos = _repoDirectivo.ObtenerPorIdEmpresa(Id);
             listadoEmpleados = _repoEmpleado.ObtenerPorIdEmpresa(Id);
             listadoClientes = _repoCliente.ObtenerPorIdEmpresa(Id);

@@ -23,7 +23,30 @@
     </div>
 </div>
 
-<h4>LISTADO DIRECTIVOS</h4>
+<h4>LISTADO Directivos</h4>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Sueldo Bruto</th>
+            <th scope="col">Categoria</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var Directivo in Model.listadoDirectivos)
+        {
+            <tr>
+                <th scope="row">@Directivo.Id</th>
+                <td>@Directivo.Nombre</td>
+                <td>@Directivo.Sueldo_Bruto.ToString("C")</td>
+                <td>@Directivo.Categoria.ToString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>LISTADO EMPLEADOS</h4>
 <table class="table">
     <thead class="table-dark text-center">
         <tr>
@@ -33,13 +56,35 @@
         </tr>
     </thead>
     <tbody class="text-center">
-        @foreach (var empleado in Model.listadoDirectivos)
+        @foreach (var empleado in Model.listadoEmpleados)
         {
             <tr>
-                <th scope="row">@directivo.Id</th>
-                <td>@directivo.Nombre</td>
-                <td>@directivo.Sueldo_Bruto("C")</td>
+                <th scope="row">@empleado.Id</th>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Sueldo_Bruto.ToString("C")</td>
             </tr>
         }
     </tbody>
 </table>
+
+<h4>LISTADO DE CLIENTES</h4>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Telefono</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var cliente in Model.listadoClientes)
+        {
+            <tr>
+                <th scope="row">@cliente.Id</th>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Telefono</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br>
