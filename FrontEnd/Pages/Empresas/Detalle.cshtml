@@ -20,7 +20,26 @@
             <p><strong>Nit de la Empresa: </strong>@Model.Empresa.Id</p>
         </div>
         </div>
-        
-
     </div>
 </div>
+
+<h4>LISTADO DIRECTIVOS</h4>
+<table class="table">
+    <thead class="table-dark text-center">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Sueldo Bruto</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var empleado in Model.listadoDirectivos)
+        {
+            <tr>
+                <th scope="row">@directivo.Id</th>
+                <td>@directivo.Nombre</td>
+                <td>@directivo.Sueldo_Bruto("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
