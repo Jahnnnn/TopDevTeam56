@@ -5833,35 +5833,66 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\CINDY GODOY\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\OJGon\\.nuget\\packages\\": {},
+    "E:\\MVisualStudio\\Shared\\NuGetPackages": {}
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
       "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\FrontEnd.csproj",
       "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\FrontEnd\\obj\\",
+=======
+      "projectUniqueName": "E:\\Git\\TopDevTeam56\\FrontEnd\\FrontEnd.csproj",
+      "projectName": "FrontEnd",
+      "projectPath": "E:\\Git\\TopDevTeam56\\FrontEnd\\FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
+      "outputPath": "E:\\Git\\TopDevTeam56\\FrontEnd\\obj\\",
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\MVisualStudio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+        "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj": {
               "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj"
             },
             "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj": {
               "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj"
+=======
+            "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
+              "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj"
+            },
+            "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj"
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
             }
           }
         }

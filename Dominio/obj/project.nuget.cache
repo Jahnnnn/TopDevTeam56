@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "4cid72Yx1lCujeoCbMpAzqWr0DKnn/B18Vb31gY29CfkmUpaQaHMcoWcq86ExBgE9g77bOy+UFCkbSrF8WecoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
+=======
+  "dgSpecHash": "G6/ZhLc6lyTW9KEEAZhKmlPFQetGIezRVVzC8rDoxCnTziskinUKT9MbhPxNlMLULhJN9aiVi6E4xEDGwa6I/g==",
+  "success": true,
+  "projectFilePath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
   "expectedPackageFiles": [],
   "logs": []
 }

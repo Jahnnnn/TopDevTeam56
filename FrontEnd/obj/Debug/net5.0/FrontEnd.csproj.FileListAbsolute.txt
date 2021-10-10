@@ -258,6 +258,7 @@ C:\Users\DIEGO\Documents\Proyectos .Net Core\Empresa\FrontEnd\obj\Debug\net5.0\R
 >>>>>>> d99aab34f488b865052083e690b6b9b8b9a16816
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Actualizar.cshtml.g.cs
 C:\Users\pibe7\Desktop\Juan\Misión TIC\Programación\Ciclo 3- C#\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\bin\Debug\net5.0\appsettings.json
 C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\bin\Debug\net5.0\FrontEnd.exe
@@ -346,3 +347,8 @@ C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\obj\Debug\net5.0\FrontEnd.p
 C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\obj\Debug\net5.0\FrontEnd.genruntimeconfig.cache
 C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Actualizar.cshtml.g.cs
 C:\Users\CINDY GODOY\Desktop\TopDevTeam56-1\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Detalle.cshtml.g.cs
+=======
+E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Actualizar.cshtml.g.cs
+E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Directivos\Detalle.cshtml.g.cs
+E:\Git\TopDevTeam56\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empresas\NoEncontrado.cshtml.g.cs
+>>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
