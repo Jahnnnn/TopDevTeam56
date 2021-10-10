@@ -18,8 +18,13 @@ namespace FrontEnd.Pages.Empresas
         public DetalleModel(IRepositorioEmpresa repositorioEmpresa){
             _repoEmpresa = repositorioEmpresa;
         }
-        public void OnGet(int Id){
+        public IActionResult OnGet(int Id){
             Empresa = _repoEmpresa.ObtenerPorId(Id);
+            if(Empresa == null){
+                return RedirectToPage("./NoEncontrado");
+            }else{
+                return Page();
+            }
         }
         
     }
