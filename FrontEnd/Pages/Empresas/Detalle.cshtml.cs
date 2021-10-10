@@ -18,8 +18,8 @@ namespace FrontEnd.Pages.Empresas
         public DetalleModel(IRepositorioEmpresa repositorioEmpresa){
             _repoEmpresa = repositorioEmpresa;
         }
-        public void OnGet(int empresaId){
-            Empresa = _repoEmpresa.ObtenerPorId(empresaId);
+        public void OnGet(int Id){
+            Empresa = _repoEmpresa.ObtenerPorId(Id);
         }
         
     }

@@ -8,41 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\CINDY GODOY\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\OJGon\\.nuget\\packages\\": {},
     "E:\\MVisualStudio\\Shared\\NuGetPackages": {}
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
-      "projectName": "Dominio",
-      "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\obj\\",
-=======
       "projectUniqueName": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
       "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
       "outputPath": "E:\\Git\\TopDevTeam56\\Dominio\\obj\\",
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\MVisualStudio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
         "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -84,5 +68,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché E:\\Git\\TopDevTeam56\\Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

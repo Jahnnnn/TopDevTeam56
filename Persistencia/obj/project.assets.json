@@ -5814,41 +5814,25 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\CINDY GODOY\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\OJGon\\.nuget\\packages\\": {},
     "E:\\MVisualStudio\\Shared\\NuGetPackages": {}
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj",
-      "projectName": "Persistencia",
-      "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\CINDY GODOY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Persistencia\\obj\\",
-=======
       "projectUniqueName": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
       "projectPath": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
       "outputPath": "E:\\Git\\TopDevTeam56\\Persistencia\\obj\\",
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\MVisualStudio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\CINDY GODOY\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
         "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5861,13 +5845,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\CINDY GODOY\\Desktop\\TopDevTeam56-1\\Dominio\\Dominio.csproj"
-=======
             "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
               "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj"
->>>>>>> fd78a0aecbb047723b79f0d31ee79364f10d286e
             }
           }
         }
@@ -5917,5 +5896,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché E:\\Git\\TopDevTeam56\\Persistencia\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
