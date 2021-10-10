@@ -21,9 +21,10 @@ namespace FrontEnd.Pages.Empresas
         public ActualizarModel(IRepositorioEmpresa repoEmpresa){
             _repoEmpresa = repoEmpresa;
         }
-        public void OnGet()
+        public void OnGet(int Id)
         {
             empresaActualizada = -1;
+            Empresa = _repoEmpresa.ObtenerPorId(Id);
         }
 
         public IActionResult OnPost(){

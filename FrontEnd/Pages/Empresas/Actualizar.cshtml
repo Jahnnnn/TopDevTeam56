@@ -31,19 +31,18 @@ else {
             <input type="hidden" id="IdEmpresa" asp-for="Empresa.Id">
             <div class="col-md-12">
                 <label for="NombreEmpresa" class="form-label">Razon Social</label>
-                <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa"
-                    aria-describedby="emailHelp">
+                <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa">
+                <small id="MensajeValidacionCampoNombreCompletoEmpresa"></small>
             </div>
             <div class="col-md-12">
                 <label for="NitEmpresa" class="form-label">Nit Empresa</label>
-                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NitEmpresa"
-                    aria-describedby="emailHelp">
+                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NitEmpresa" value="@Model.Empresa.NIT">
                 <br>
             </div>
             
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Actaulizar</button>
+                    <button type="submit" class="btn btn-success">Actualizar</button>
                 </div>
             </div>
         </form>
