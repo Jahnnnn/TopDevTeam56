@@ -46,6 +46,7 @@ namespace FrontEnd.Pages.Empresas
 
         public IActionResult OnGetEliminarEmpresa(int id){
             bool empresaEliminada = _repoEmpresa.Eliminar(id);
+            listadoEmpresas = _repoEmpresa.Obtener();
 
             if(empresaEliminada){
                 empresaCreada = 3;
