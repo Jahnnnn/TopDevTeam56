@@ -108,7 +108,7 @@ else {
                 $(document).ready(function () {
                     $("@String.Concat("#EliminarEmpresa", @empresa.Id)").click(function (e) {
                         e.preventDefault();
-                        $("@String.Concat("#ModalEliminarEmpresa", empresa.Id)").modal('show');
+                        $("@String.Concat("#ModalEliminarEmpresa", @empresa.Id)").modal('show');
                     });
 
                     $("@String.Concat("#CancelarEliminacionEmpresa", @empresa.Id)").click(function () {
