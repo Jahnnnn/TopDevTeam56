@@ -31,6 +31,7 @@ namespace FrontEnd
             services.AddSingleton<IRepositorioEmpresa, RepositorioEmpresa>();
             services.AddSingleton<IRepositorioDirectivo, RepositorioDirectivo>();
             services.AddSingleton<IRepositorioCliente, RepositorioCliente>();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,9 +49,12 @@ namespace FrontEnd
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

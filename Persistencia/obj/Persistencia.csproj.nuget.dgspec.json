@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {}
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj": {}
   },
   "projects": {
-    "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\TopDevTeam56\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\DIEGO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\MVisualStudio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DIEGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,25 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "E:\\Git\\TopDevTeam56\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\OJGon\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\TopDevTeam56\\Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\DIEGO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\MVisualStudio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OJGon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DIEGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj": {
-                "projectPath": "E:\\Git\\TopDevTeam56\\Dominio\\Dominio.csproj"
+              "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\DIEGO\\Documents\\Proyectos .Net Core\\Empresa\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -138,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

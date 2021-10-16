@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia.Repositorios;
-
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 namespace FrontEnd.Pages.Empresas
 {
+    [Authorize]
     public class DetalleModel : PageModel
     {
         private readonly IRepositorioEmpresa _repoEmpresa;

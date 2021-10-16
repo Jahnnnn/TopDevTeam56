@@ -3,7 +3,7 @@
 @{
 }
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script> 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 
 <h4 class="text-center">AGREGAR CLIENTE</h4>
 @if (Model.estadoCliente == 0)
@@ -42,13 +42,14 @@ else if (Model.estadoCliente == 3)
         </button>
     </div>
 }
-else {
-    
+else
+{
+
 }
 
 <div class="card">
     <div class="card-body">
-        <form class="row g-3" method="POST"> 
+        <form class="row g-3" method="POST">
             <div class="col-md-8">
                 <label for="NombreCompletoCliente" class="form-label">Nombre Completo</label>
                 <input asp-for="Cliente.Nombre" type="text" class="form-control" id="NombreCompletoCliente">
@@ -59,10 +60,16 @@ else {
                 <input asp-for="Cliente.Fecha_Nacimiento" asp-format="{0:dd/MM/yyyy HH:mm}" type="date"
                     class="form-control" id="FechaNacimientoClienteC">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
+                <br>
                 <label for="TelefonoCliente" class="form-label">Teléfono</label>
-                <input asp-for="Cliente.Telefono" type="text" class="form-control" id="TelefonoCliente">
-                <small id="MensajeValidacionCampoTelefonoCliente"></small>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                    </div>
+                    <input asp-for="Cliente.Telefono" type="text" class="form-control" id="TelefonoCliente">
+                    <small id="MensajeValidacionCampoTelefonoCliente"></small>
+                </div>
             </div>
             <div class="col-md-6">
                 <br>
@@ -138,7 +145,8 @@ else {
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
                             id="@String.Concat("CancelarEliminacionCliente", @cliente.Id)">Cancelar</button>
-                            <a asp-page-handler="EliminarCliente" asp-route-id="@cliente.Id" class="btn btn-danger">Eliminar <i class="fa fa-trash-o"></i></a>
+                            <a asp-page-handler="EliminarCliente" asp-route-id="@cliente.Id" class="btn btn-danger">Eliminar
+                                <i class="fa fa-trash-o"></i></a>
                         </div>
                     </div>
                 </div>

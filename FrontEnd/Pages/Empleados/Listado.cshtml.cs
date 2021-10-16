@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using Dominio;
 using Persistencia.Repositorios;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 namespace FrontEnd.Pages.Empleados
 {
+    [Authorize]
     public class ListadoModel : PageModel
     {
         private readonly IRepositorioEmpleado _repositorioEmpleado;

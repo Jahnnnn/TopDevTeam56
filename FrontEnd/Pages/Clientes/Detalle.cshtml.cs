@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using Dominio;
 using Persistencia.Repositorios;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 
 namespace FrontEnd.Pages.Clientes
 {
+    [Authorize]
     public class DetalleModel : PageModel
     {
         private readonly IRepositorioCliente _repositorioCliente;
