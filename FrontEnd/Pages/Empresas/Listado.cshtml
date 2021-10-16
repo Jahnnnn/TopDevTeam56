@@ -5,7 +5,7 @@
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
-<h2 class="text-center">AGREGAR EMPRESA</h2>
+<h4 class="text-center">AGREGAR EMPRESA</h4>
 
 @if(Model.empresaCreada == 0){
      <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -30,28 +30,30 @@ else {
 <div class="card">
     <div class="card-body">
         <form class="row g-3" method="POST">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <label for="NombreEmpresa" class="form-label">Razon Social</label>
                 <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa"
                     aria-describedby="emailHelp">
+                <small id="MensajeValidacionCampoNombreEmpresa"></small>
             </div>
-            <div class="col-md-12">
-                <label for="NitEmpresa" class="form-label">Nit Empresa</label>
-                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NitEmpresa"
+            <div class="col-md-6">
+                <label for="NITEmpresa" class="form-label">Nit Empresa</label>
+                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NITEmpresa"
                     aria-describedby="emailHelp">
+                <small id="MensajeValidacionCampoNITEmpresa"></small>
                 <br>
             </div>
             
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Crear</button>
+                    <button id="CrearEmpresa" type="submit" class="btn btn-success" disabled>Crear</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
 <br>
-<h4>Listado de Empresas</h4>
+<h4>LISTADO DE EMPRESAS</h4>
 <table class="table">
     <thead class="table-dark text-center">
         <tr>

@@ -3,7 +3,7 @@
 @{
 }
 
-<h2 class="text-center">Actualizar Empresa</h2>
+<h4 class="text-center">ACTUALIZAR EMPRESA</h4>
 
 @if(Model.empresaActualizada == 0){
      <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -29,26 +29,28 @@ else {
     <div class="card-body">
         <form class="row g-3" method="POST">
             <input type="hidden" id="IdEmpresa" asp-for="Empresa.Id">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <label for="NombreEmpresa" class="form-label">Razon Social</label>
                 <input asp-for="Empresa.Nombre" type="text" class="form-control" id="NombreEmpresa">
-                <small id="MensajeValidacionCampoNombreCompletoEmpresa"></small>
+                <small id="MensajeValidacionCampoNombreEmpresa"></small>
             </div>
-            <div class="col-md-12">
-                <label for="NitEmpresa" class="form-label">Nit Empresa</label>
-                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NitEmpresa" value="@Model.Empresa.NIT">
+            <div class="col-md-6">
+                <label for="NITEmpresa" class="form-label">Nit Empresa</label>
+                <input asp-for="Empresa.NIT" type="text" class="form-control" id="NITEmpresa">
+                <small id="MensajeValidacionCampoNITEmpresa"></small>
                 <br>
             </div>
             
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success">Actualizar</button>
+                    <button id="ActualizarEmpresa" type="submit" class="btn btn-info">Actualizar</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
 
+<br>
 <a asp-page="./Listado" class="btn btn-warning">
     <i class="fa fa-arrow-left"></i>
     Regresar
